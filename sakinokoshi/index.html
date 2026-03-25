@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>先のこし - 小さな我慢が、大きな種火になる</title>
+    <meta name="description" content="買う前に、未来の価値を見る。日々の小さな出費を未来から見直す節約サポートアプリ。">
+    <link rel="icon" type="image/png" href="../images/app-icon.png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #fdf6f0 0%, #fff5ee 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .back { display: inline-block; padding: 20px; color: #c17f6e; text-decoration: none; font-size: 0.9rem; }
+        .back:hover { text-decoration: underline; }
+        .hero { text-align: center; padding: 20px 20px 40px; }
+        .app-icon { width: 120px; height: 120px; border-radius: 24px; box-shadow: 0 8px 30px rgba(193,127,110,0.3); margin-bottom: 20px; }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .tagline { font-size: 1.2rem; color: #c17f6e; margin-bottom: 30px; }
+        .app-store-btn { display: inline-block; background: #000; color: #fff; padding: 14px 28px; border-radius: 12px; text-decoration: none; font-size: 1rem; transition: transform 0.2s; }
+        .app-store-btn:hover { transform: translateY(-2px); }
+        .concept { background: white; padding: 60px 20px; text-align: center; }
+        .concept h2 { font-size: 1.5rem; color: #c17f6e; margin-bottom: 20px; }
+        .concept p { max-width: 600px; margin: 0 auto; line-height: 2; color: #555; }
+        .highlight { background: linear-gradient(transparent 60%, #fde8e0 60%); font-weight: bold; }
+        .screenshots { padding: 60px 20px; text-align: center; }
+        .screenshots h2 { font-size: 1.5rem; margin-bottom: 30px; }
+        .screenshot-gallery { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; max-width: 900px; margin: 0 auto; }
+        .screenshot-gallery img { width: 200px; border-radius: 20px; box-shadow: 0 8px 30px rgba(0,0,0,0.12); }
+        @media (max-width: 680px) { .screenshot-gallery img { width: 140px; } }
+        .features { background: white; padding: 60px 20px; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; max-width: 800px; margin: 0 auto; }
+        .feature { text-align: center; padding: 20px; }
+        .feature-icon { font-size: 2.5rem; margin-bottom: 15px; }
+        .feature h3 { font-size: 1.1rem; margin-bottom: 10px; }
+        .feature p { color: #666; line-height: 1.6; font-size: 0.95rem; }
+        .footer { text-align: center; padding: 40px 20px; color: #aaa; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <a href="../" class="back">&larr; House-lovers Apps</a>
+
+    <section class="hero">
+        <img src="../images/app-icon.png" alt="先のこし" class="app-icon">
+        <h1>先のこし</h1>
+        <p class="tagline">小さな我慢が、大きな種火になる</p>
+        <a href="https://apps.apple.com/app/id0000000000" class="app-store-btn">App Storeでダウンロード</a>
+    </section>
+
+    <section class="concept">
+        <h2>買う前に、未来の価値を見る</h2>
+        <p>
+            コンビニのコーヒー、衝動買いのお菓子、なんとなくの課金。<br>
+            日々の小さな出費は、一つ一つは些細でも、積み重なれば大きな金額に。<br><br>
+            <span class="highlight">「この300円は、30年後に1,297円の価値がある」</span><br><br>
+            その事実を知るだけで、判断は変わります。<br>
+            のこしたお金は<span class="highlight">「種火」</span>となり、複利の力で未来を照らす炎に育ちます。
+        </p>
+    </section>
+
+    <section class="screenshots">
+        <h2>シンプルに、3秒で使える</h2>
+        <div class="screenshot-gallery">
+            <img src="../images/01_home_input.png" alt="金額入力">
+            <img src="../images/02_future_value.png" alt="将来価値">
+            <img src="../images/03_growth_chart.png" alt="成長グラフ">
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="features-grid">
+            <div class="feature">
+                <div class="feature-icon">3</div>
+                <h3>3秒で未来価値を確認</h3>
+                <p>金額を入力するだけ。5年・10年・20年・30年後の価値がすぐわかる。</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">0</div>
+                <h3>アカウント登録不要</h3>
+                <p>データは端末内に保存。個人情報の収集や外部送信は一切なし。</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">1</div>
+                <h3>1つのことに集中</h3>
+                <p>複雑な家計簿機能はなし。「のこすか、買うか」を決めるだけ。</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Taisuke Goto. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

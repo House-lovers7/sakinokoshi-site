@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>プライバシーポリシー - 先のこし</title>
+    <title>プライバシーポリシー - House-lovers Apps</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #fdf6f0 0%, #fff5ee 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+            background: #f9fafb;
             min-height: 100vh;
             padding: 40px 20px;
             color: #333;
@@ -21,79 +21,97 @@
             padding: 40px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.08);
         }
-        .back {
-            display: inline-block;
-            color: #c17f6e;
-            text-decoration: none;
-            margin-bottom: 20px;
-        }
+        .back { display: inline-block; color: #3b82f6; text-decoration: none; margin-bottom: 20px; font-size: 0.9rem; }
         .back:hover { text-decoration: underline; }
-        h1 {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-            color: #333;
+        h1 { font-size: 1.8rem; margin-bottom: 10px; }
+        .updated { color: #888; font-size: 0.9rem; margin-bottom: 30px; }
+        h2 { font-size: 1.2rem; margin-top: 30px; margin-bottom: 10px; color: #1f2937; }
+        h3 { font-size: 1.05rem; margin-top: 24px; margin-bottom: 8px; color: #3b82f6; }
+        p { line-height: 1.8; margin-bottom: 12px; color: #4b5563; font-size: 0.95rem; }
+        ul { padding-left: 20px; margin-bottom: 12px; }
+        li { line-height: 1.8; color: #4b5563; font-size: 0.95rem; }
+        .app-section {
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 16px 0;
         }
-        .updated {
-            color: #888;
-            font-size: 0.9rem;
-            margin-bottom: 30px;
+        .app-section-title {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
-        h2 {
-            font-size: 1.1rem;
-            margin-top: 30px;
-            margin-bottom: 10px;
-            color: #c17f6e;
-        }
-        p {
-            line-height: 1.8;
-            margin-bottom: 15px;
-        }
-        .footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-            text-align: center;
-            color: #aaa;
-            font-size: 0.9rem;
-        }
+        a { color: #3b82f6; }
+        .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; text-align: center; color: #aaa; font-size: 0.85rem; }
     </style>
 </head>
 <body>
     <div class="container">
-        <a href="../" class="back">← 先のこし</a>
+        <a href="../" class="back">&larr; House-lovers Apps</a>
         <h1>プライバシーポリシー</h1>
-        <p class="updated">最終更新日: 2026年3月19日</p>
+        <p class="updated">最終更新日: 2026年3月26日</p>
 
         <h2>1. はじめに</h2>
-        <p>「先のこし」（以下「本アプリ」）は、ユーザーのプライバシーを尊重し、個人情報の保護に配慮して設計されています。本ポリシーでは、本アプリにおける情報の取り扱いについて説明します。</p>
+        <p>本ポリシーは、Taisuke Goto（以下「開発者」）が提供する全てのアプリケーション（以下「本アプリ」）における情報の取り扱いについて説明します。本アプリはユーザーのプライバシーを最優先に設計されています。</p>
 
-        <h2>2. 取得する情報</h2>
-        <p>本アプリは、氏名、メールアドレス、電話番号、位置情報、連絡先、写真、金融口座情報などの個人情報を、本アプリの機能として取得・収集しません。</p>
-        <p>また、アカウント登録も不要です。</p>
+        <h2>2. 共通方針</h2>
+        <p>開発者が提供する全てのアプリに共通する方針です：</p>
+        <ul>
+            <li>ユーザーデータは<strong>端末内にのみ保存</strong>され、外部サーバーに送信しません</li>
+            <li>アカウント登録は不要です</li>
+            <li>広告SDK、行動追跡、外部アナリティクスツールは利用していません</li>
+            <li>ユーザー情報を第三者へ販売、共有、提供することはありません</li>
+        </ul>
 
-        <h2>3. 端末内に保存されるデータ</h2>
-        <p>本アプリで入力・記録された金額、カテゴリ、履歴、設定情報などは、ユーザーの端末内にのみ保存されます。</p>
-        <p>これらのデータは、本アプリの機能提供のためにのみ利用されます。</p>
+        <h2>3. アプリ別の情報</h2>
 
-        <h2>4. 外部送信について</h2>
-        <p>本アプリは、アプリ内データを外部サーバーへ送信しません。入力内容や利用履歴が、開発者に共有されることはありません。</p>
+        <div class="app-section">
+            <div class="app-section-title">🌱 先のこし</div>
+            <p><strong>端末内に保存されるデータ:</strong></p>
+            <ul>
+                <li>入力した金額、カテゴリ、履歴、設定情報</li>
+            </ul>
+            <p><strong>外部通信:</strong> なし（主要機能は完全オフライン）</p>
+        </div>
 
-        <h2>5. 第三者提供</h2>
-        <p>本アプリは、ユーザー情報を第三者へ販売、共有、提供することはありません。</p>
+        <div class="app-section">
+            <div class="app-section-title">🏠 家計の味方</div>
+            <p><strong>端末内に保存されるデータ:</strong></p>
+            <ul>
+                <li>設定情報（選択カテゴリ、地域、チェーン、世帯人数、通知設定）</li>
+                <li>購入履歴（商品名、価格、数量、日時）</li>
+                <li>通知購読情報</li>
+            </ul>
+            <p><strong>外部通信:</strong></p>
+            <ul>
+                <li>Sentry - エラー監視（匿名化されたエラー情報のみ）</li>
+                <li>e-Stat API - 消費者物価指数データの取得（個人情報は送信しません）</li>
+            </ul>
+        </div>
 
-        <h2>6. 解析ツール・広告SDK</h2>
-        <p>本アプリは、広告SDK、行動追跡、外部アナリティクスツールを利用していません。</p>
+        <h2>4. データの削除</h2>
+        <p>各アプリの設定画面から、保存されている全てのデータを削除できます。アプリを削除すると、端末内の全データも自動的に削除されます。</p>
 
-        <h2>7. ネットワーク利用について</h2>
-        <p>本アプリの主要機能はオフラインで利用できます。なお、サポートページの閲覧など、アプリ外のWebページへ移動する場合にはインターネット接続が必要になることがあります。</p>
+        <h2>5. Cookie・トラッキング</h2>
+        <p>開発者のアプリはCookieやトラッキング技術を使用しません。</p>
 
-        <h2>8. お問い合わせ</h2>
+        <h2>6. 児童のプライバシー</h2>
+        <p>開発者のアプリは13歳未満の児童を対象としていません。</p>
+
+        <h2>7. お問い合わせ時の情報</h2>
         <p>サポートへのお問い合わせ時に、ユーザーが任意で提供した情報（メールアドレス、問い合わせ内容など）は、お問い合わせ対応のためにのみ利用します。</p>
 
-        <h2>9. ポリシーの変更</h2>
+        <h2>8. ポリシーの変更</h2>
         <p>本ポリシーは、必要に応じて改定されることがあります。重要な変更がある場合は、最新の内容を本ページに掲載します。</p>
 
-        <p class="footer">© 2026 Taisuke Goto. All Rights Reserved.</p>
+        <h2>9. お問い合わせ</h2>
+        <p>プライバシーに関するお問い合わせ: <a href="mailto:cokomo.gt@gmail.com">cokomo.gt@gmail.com</a></p>
+
+        <p class="footer">&copy; 2026 Taisuke Goto. All Rights Reserved.</p>
     </div>
 </body>
 </html>

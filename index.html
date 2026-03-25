@@ -3,237 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>先のこし - 小さな我慢が、大きな種火になる</title>
-    <meta name="description" content="買う前に、未来の価値を見る。日々の小さな出費を未来から見直す節約サポートアプリ。">
+    <title>House-lovers Apps</title>
+    <meta name="description" content="House-lovers Apps - Taisuke Gotoが開発するアプリケーション一覧">
     <link rel="icon" type="image/png" href="./images/app-icon.png">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #fdf6f0 0%, #fff5ee 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+            background: linear-gradient(135deg, #f0f4ff 0%, #f9fafb 100%);
             min-height: 100vh;
             color: #333;
         }
-
-        /* Hero Section */
-        .hero {
+        .header {
             text-align: center;
             padding: 60px 20px 40px;
         }
-        .app-icon {
-            width: 120px;
-            height: 120px;
-            border-radius: 24px;
-            box-shadow: 0 8px 30px rgba(193, 127, 110, 0.3);
-            margin-bottom: 20px;
+        .header h1 {
+            font-size: 2.2rem;
+            color: #1f2937;
+            margin-bottom: 8px;
         }
-        h1 {
-            font-size: 2.5rem;
-            color: #333;
-            margin-bottom: 10px;
-        }
-        .tagline {
-            font-size: 1.2rem;
-            color: #c17f6e;
-            margin-bottom: 30px;
-        }
-        .app-store-btn {
-            display: inline-block;
-            background: #000;
-            color: #fff;
-            padding: 14px 28px;
-            border-radius: 12px;
-            text-decoration: none;
+        .header p {
+            color: #6b7280;
             font-size: 1rem;
+        }
+        .apps {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0 20px 40px;
+            display: grid;
+            gap: 24px;
+        }
+        .app-card {
+            background: white;
+            border-radius: 20px;
+            padding: 28px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            text-decoration: none;
+            color: inherit;
             transition: transform 0.2s, box-shadow 0.2s;
         }
-        .app-store-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        .app-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
         }
-
-        /* Concept Section */
-        .concept {
-            background: white;
-            padding: 60px 20px;
-            text-align: center;
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 18px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            flex-shrink: 0;
         }
-        .concept h2 {
-            font-size: 1.5rem;
-            color: #c17f6e;
-            margin-bottom: 20px;
-        }
-        .concept p {
-            max-width: 600px;
-            margin: 0 auto;
-            line-height: 2;
-            color: #555;
-        }
-        .concept .highlight {
-            background: linear-gradient(transparent 60%, #fde8e0 60%);
-            font-weight: bold;
-        }
-
-        /* Screenshots Section */
-        .screenshots {
-            padding: 60px 20px;
-            text-align: center;
-        }
-        .screenshots h2 {
-            font-size: 1.5rem;
-            color: #333;
-            margin-bottom: 30px;
-        }
-        .screenshot-gallery {
+        .app-icon-emoji {
+            width: 80px;
+            height: 80px;
+            border-radius: 18px;
+            background: linear-gradient(135deg, #dbeafe, #eff6ff);
             display: flex;
+            align-items: center;
             justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        .screenshot-gallery img {
-            width: 200px;
-            border-radius: 20px;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-        }
-        @media (max-width: 680px) {
-            .screenshot-gallery img {
-                width: 140px;
-            }
-        }
-
-        /* Features Section */
-        .features {
-            background: white;
-            padding: 60px 20px;
-        }
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .feature {
-            text-align: center;
-            padding: 20px;
-        }
-        .feature-icon {
             font-size: 2.5rem;
-            margin-bottom: 15px;
+            flex-shrink: 0;
+            box-shadow: 0 4px 15px rgba(59,130,246,0.15);
         }
-        .feature h3 {
-            font-size: 1.1rem;
-            margin-bottom: 10px;
-            color: #333;
+        .app-info h2 {
+            font-size: 1.3rem;
+            margin-bottom: 4px;
         }
-        .feature p {
-            color: #666;
-            line-height: 1.6;
-            font-size: 0.95rem;
+        .app-info .tagline {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
         }
-
-        /* Links Section */
+        .app-info .badge {
+            display: inline-block;
+            font-size: 0.75rem;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+        .badge-live { background: #dcfce7; color: #166534; }
+        .badge-new { background: #dbeafe; color: #1e40af; }
         .links {
-            padding: 60px 20px;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px;
             text-align: center;
         }
         .links-container {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 16px;
             flex-wrap: wrap;
-            max-width: 600px;
-            margin: 0 auto;
         }
         .links a {
-            padding: 12px 24px;
+            padding: 10px 20px;
             background: white;
             border-radius: 10px;
             text-decoration: none;
             color: #333;
+            font-size: 0.9rem;
             box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-            transition: transform 0.2s, box-shadow 0.2s;
+            transition: transform 0.2s;
         }
         .links a:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
-
-        /* Footer */
         .footer {
             text-align: center;
             padding: 40px 20px;
-            color: #aaa;
-            font-size: 0.9rem;
+            color: #9ca3af;
+            font-size: 0.85rem;
         }
     </style>
 </head>
 <body>
-    <!-- Hero -->
-    <section class="hero">
-        <img src="./images/app-icon.png" alt="先のこし" class="app-icon">
-        <h1>先のこし</h1>
-        <p class="tagline">小さな我慢が、大きな種火になる</p>
-        <a href="https://apps.apple.com/app/id0000000000" class="app-store-btn">App Storeでダウンロード</a>
-    </section>
+    <header class="header">
+        <h1>House-lovers Apps</h1>
+        <p>Taisuke Goto が開発するアプリケーション</p>
+    </header>
 
-    <!-- Concept -->
-    <section class="concept">
-        <h2>買う前に、未来の価値を見る</h2>
-        <p>
-            コンビニのコーヒー、衝動買いのお菓子、なんとなくの課金。<br>
-            日々の小さな出費は、一つ一つは些細でも、積み重なれば大きな金額に。<br><br>
-            <span class="highlight">「この300円は、30年後に1,297円の価値がある」</span><br><br>
-            その事実を知るだけで、判断は変わります。<br>
-            のこしたお金は<span class="highlight">「種火」</span>となり、複利の力で未来を照らす炎に育ちます。
-        </p>
-    </section>
-
-    <!-- Screenshots -->
-    <section class="screenshots">
-        <h2>シンプルに、3秒で使える</h2>
-        <div class="screenshot-gallery">
-            <img src="./images/01_home_input.png" alt="金額入力">
-            <img src="./images/02_future_value.png" alt="将来価値">
-            <img src="./images/03_growth_chart.png" alt="成長グラフ">
-        </div>
-    </section>
-
-    <!-- Features -->
-    <section class="features">
-        <div class="features-grid">
-            <div class="feature">
-                <div class="feature-icon">3</div>
-                <h3>3秒で未来価値を確認</h3>
-                <p>金額を入力するだけ。5年・10年・20年・30年後の価値がすぐわかる。</p>
+    <section class="apps">
+        <a href="./sakinokoshi/" class="app-card">
+            <img src="./images/app-icon.png" alt="先のこし" class="app-icon">
+            <div class="app-info">
+                <h2>先のこし</h2>
+                <p class="tagline">小さな我慢が、大きな種火になる</p>
+                <span class="badge badge-live">App Store 公開中</span>
             </div>
-            <div class="feature">
-                <div class="feature-icon">0</div>
-                <h3>アカウント登録不要</h3>
-                <p>データは端末内に保存。個人情報の収集や外部送信は一切なし。</p>
+        </a>
+
+        <a href="./kakei-no-mikata/" class="app-card">
+            <div class="app-icon-emoji">🏠</div>
+            <div class="app-info">
+                <h2>家計の味方</h2>
+                <p class="tagline">食費インフレ対策アプリ</p>
+                <span class="badge badge-new">NEW</span>
             </div>
-            <div class="feature">
-                <div class="feature-icon">1</div>
-                <h3>1つのことに集中</h3>
-                <p>複雑な家計簿機能はなし。「のこすか、買うか」を決めるだけ。</p>
-            </div>
-        </div>
+        </a>
     </section>
 
-    <!-- Links -->
     <section class="links">
         <div class="links-container">
             <a href="./privacy/">プライバシーポリシー</a>
-            <a href="./terms/">ご利用にあたって</a>
+            <a href="./terms/">利用規約</a>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSep_9W77yf6Rh24OpQuP0oN-vIqHIyuPY-3Z8B8htnkDOw-iw/viewform" target="_blank">お問い合わせ</a>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
-        <p>© 2026 Taisuke Goto. All Rights Reserved.</p>
+        <p>&copy; 2026 Taisuke Goto. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
